@@ -165,9 +165,8 @@ else
 end
 
 tax = 1.07
-subtotal += pizza_cost + other_cost + wings_cost + salad_cost + drink_cost
+subtotal += pizza_cost + other_cost + wings_cost + salad_cost + drink_cost 
 total_cost = subtotal * tax
-
 
 delivery_option = delivery
 delivery_cost = delivery_choice(delivery_option)
@@ -178,9 +177,12 @@ if delivery_option == "yes"
 else
    tip = 0
 end
-puts "\nThe tip amount is $#{sprintf("%.02f", tip)}."
+
 
 puts "\nThe total cost including tax is $#{sprintf("%.02f", total_cost)}."
 puts "\nYour choice for delivery is #{delivery_option}."
 puts "\nThe delivery cost is $#{sprintf("%.02f", delivery_cost)}."
+puts "\nThe tip amount is $#{sprintf("%.02f", tip)}."
+
+
  
